@@ -1,4 +1,4 @@
-import bookmarkLogo from '~/public/assets/images/logo-bookmark.svg';
+import bookmarkLogo from '../../public/assets/images/logo-bookmark.svg';
 import Button from './Button';
 
 export default function Navbar() {

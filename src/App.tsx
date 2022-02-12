@@ -1,23 +1,33 @@
 import Button from './components/Button';
 import Navbar from './components/Navbar';
-import heroBackground from '~/public/assets/images/hero-bg.png';
+import heroBackground from '../public/assets/images/hero-bg.png';
+import Features from './components/Sections/Features';
+import Heading from './components/Typography/Heading';
 
 export default function App() {
 	return (
 		<>
+			{/* Header */}
 			<Navbar />
 
-			<main>
+			<main className="overflow-hidden">
+				{/* Hero */}
 				<section className="relative">
 					<div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
 						<div className="flex flex-1 flex-col items-center lg:items-start">
-							<h2 className="text-slate-800 text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6 font-medium">
+							<Heading
+								tag="h2"
+								color="text-slate-800"
+								size="4xl"
+								weight="medium"
+								className="text-center lg:text-left mb-6"
+							>
 								A Simple Boomark Manager
-							</h2>
+							</Heading>
 
 							<p className="text-slate-500 text-lg text-center lg:text-left mb-6">
 								A clean and simple interface to organize your favourite websites. Open a new browser
-								tab and se. laod instantly. Try it for free.
+								tab and see your sites load instantly. Try it for free.
 							</p>
 
 							<div className="flex justify-center flex-wrap gap-6">
@@ -38,8 +48,10 @@ export default function App() {
 					</div>
 
 					{/* Rounded rectangule */}
-					<div className="hidden md:block overflow-hidden bg-indigo-500 rounded-l-full absolute w-2/4 h-80 top-32 right-0 lg:-bottom-28 lg:-right-36" />
+					<div className="hidden md:block bg-indigo-500 rounded-l-full absolute w-2/4 h-80 top-32 right-0 lg:-bottom-28 lg:-right-36" />
 				</section>
+
+				<Features />
 			</main>
 		</>
 	);

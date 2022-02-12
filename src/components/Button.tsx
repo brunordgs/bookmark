@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 
 export const VARIANTS = {
 	primary: {
@@ -15,7 +15,6 @@ export const VARIANTS = {
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: keyof typeof VARIANTS;
-	children: ReactNode;
 }
 
 export default function Button({ variant = 'primary', children, className, ...props }: Props) {
