@@ -1,7 +1,10 @@
+import Button from './components/Button';
 import Navbar from './components/Navbar';
 import Download from './components/Sections/Download';
+import Faq from './components/Sections/Faq';
 import Features from './components/Sections/Features';
 import Hero from './components/Sections/Hero';
+import Heading from './components/Typography/Heading';
 
 export default function App() {
 	return (
@@ -21,6 +24,10 @@ export default function App() {
 
 				<section className="py-20 mt-20">
 					<Download />
+				</section>
+
+				<section className="bg-gray-100 py-20">
+					<Faq />
 				</section>
 			</main>
 		</>
