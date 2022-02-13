@@ -1,6 +1,7 @@
 import featuresTab2 from '../../../../public/assets/images/illustration-features-tab-2.png';
 import Button from '../../Button';
 import RoundedRectangule from '../../Misc/RoundedRectangule';
+import Heading from '../../Typography/Heading';
 
 export default function IntelligentSearch() {
 	return (
@@ -17,7 +18,9 @@ export default function IntelligentSearch() {
 
 				{/* Content */}
 				<div className="flex flex-1 flex-col items-center lg:items-start">
-					<h1 className="text-3xl text-slate-800">Intelligent search</h1>
+					<Heading tag="h1" size="3xl" color="text-slate-800" exactSize>
+						Intelligent search
+					</Heading>
 
 					<p className="text-slate-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
 						Our powerful search feature will help you find saved sites in no time at all. No need to
@@ -28,7 +31,7 @@ export default function IntelligentSearch() {
 				</div>
 			</div>
 
-			<RoundedRectangule />
+			<RoundedRectangule position="right" />
 		</div>
 	);
 }

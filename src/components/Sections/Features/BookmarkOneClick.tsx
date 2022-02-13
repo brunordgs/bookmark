@@ -1,6 +1,7 @@
 import featuresTab1 from '../../../../public/assets/images/illustration-features-tab-1.png';
 import Button from '../../Button';
 import RoundedRectangule from '../../Misc/RoundedRectangule';
+import Heading from '../../Typography/Heading';
 
 export default function BookmarkOneClick() {
 	return (
@@ -17,7 +18,9 @@ export default function BookmarkOneClick() {
 
 				{/* Content */}
 				<div className="flex flex-1 flex-col items-center lg:items-start">
-					<h1 className="text-3xl text-slate-800">Bookmark in one click</h1>
+					<Heading tag="h1" color="text-slate-800" size="3xl" exactSize>
+						Bookmark in one click
+					</Heading>
 
 					<p className="text-slate-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
 						Organize your bookmarks however you like. Our simple drag-and-drop interface gives you

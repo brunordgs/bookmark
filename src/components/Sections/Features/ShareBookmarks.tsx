@@ -1,6 +1,7 @@
 import Button from '../../Button';
 import featuresTab3 from '../../../../public/assets/images/illustration-features-tab-3.png';
 import RoundedRectangule from '../../Misc/RoundedRectangule';
+import Heading from '../../Typography/Heading';
 
 export default function ShareBookmarks() {
 	return (
@@ -17,7 +18,9 @@ export default function ShareBookmarks() {
 
 				{/* Content */}
 				<div className="flex flex-1 flex-col items-center lg:items-start">
-					<h1 className="text-3xl text-slate-800">Share your bookmarks</h1>
+					<Heading tag="h1" size="3xl" color="text-slate-800" exactSize>
+						Share your bookmarks
+					</Heading>
 
 					<p className="text-slate-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
 						Easily share your bookmarks and collections with others. Create a shareable link that

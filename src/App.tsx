@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import heroBackground from '../public/assets/images/hero-bg.png';
 import Features from './components/Sections/Features';
 import Heading from './components/Typography/Heading';
+import RoundedRectangule from './components/Misc/RoundedRectangule';
 
 export default function App() {
 	return (
@@ -48,7 +49,7 @@ export default function App() {
 					</div>
 
 					{/* Rounded rectangule */}
-					<div className="hidden md:block bg-indigo-500 rounded-l-full absolute w-2/4 h-80 top-32 right-0 lg:-bottom-28 lg:-right-36" />
+					<RoundedRectangule position="right" />
 				</section>
 
 				<Features />
