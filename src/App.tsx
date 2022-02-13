@@ -1,10 +1,8 @@
-import Button from './components/Button';
 import Navbar from './components/Navbar';
 import Download from './components/Sections/Download';
 import Faq from './components/Sections/Faq';
 import Features from './components/Sections/Features';
 import Hero from './components/Sections/Hero';
-import Heading from './components/Typography/Heading';
 
 export default function App() {
 	return (
