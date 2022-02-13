@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import ContactUs from './components/Sections/ContactUs';
 import Download from './components/Sections/Download';
 import Faq from './components/Sections/Faq';
 import Features from './components/Sections/Features';
@@ -26,6 +27,10 @@ export default function App() {
 
 				<section className="bg-gray-100 py-20">
 					<Faq />
+				</section>
+
+				<section className="bg-indigo-600 text-gray-100 py-20">
+					<ContactUs />
 				</section>
 			</main>
 		</>
