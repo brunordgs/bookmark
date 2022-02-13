@@ -11,7 +11,7 @@ export default function ContactUs() {
 					Stay up-to-date with what we're doing
 				</Heading>
 
-				<div className="flex flex-col sm:flex-row gap-6 mt-8">
+				<div className="flex flex-col md:flex-row gap-6 mt-8">
 					<input
 						type="text"
 						placeholder="Enter your email address"

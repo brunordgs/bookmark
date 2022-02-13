@@ -28,7 +28,7 @@ export default function Card({ logo, name, title, description }: Props) {
 			<hr className="border-b border-gray-100" />
 
 			<div className="flex p-6">
-				<Button>Add &amp; install extension</Button>
+				<Button className="flex-1">Add &amp; install extension</Button>
 			</div>
 		</div>
 	);
