@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ContactUs from './components/Sections/ContactUs';
 import Download from './components/Sections/Download';
@@ -31,6 +32,10 @@ export default function App() {
 
 				<section className="bg-indigo-600 text-gray-100 py-20">
 					<ContactUs />
+				</section>
+
+				<section className="bg-slate-900 py-8">
+					<Footer />
 				</section>
 			</main>
 		</>

@@ -2,6 +2,8 @@ import bookmarkLogo from '../../public/assets/images/logo-bookmark.svg';
 import Button from './Button';
 
 export default function Navbar() {
+	const navLinkItems = [{ text: 'Features' }, { text: 'Pricing' }, { text: 'Contact' }];
+
 	return (
 		<nav className="container flex items-center py-4 mt-4 sm:mt-12">
 			{/* Logo */}
@@ -11,9 +13,11 @@ export default function Navbar() {
 
 			{/* Action links */}
 			<ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-slate-800 uppercase text-xs">
-				<li className="cursor-pointer hover:text-slate-500">Features</li>
-				<li className="cursor-pointer hover:text-slate-500">Pricing</li>
-				<li className="cursor-pointer hover:text-slate-500">Contact</li>
+				{navLinkItems.map(({ text }) => (
+					<li key={text} className="cursor-pointer hover:text-slate-500">
+						{text}
+					</li>
+				))}
 
 				{/* Sign-in button */}
 				<Button type="button" variant="danger" className="uppercase px-7">
